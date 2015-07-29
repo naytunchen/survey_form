@@ -117,9 +117,10 @@ class Question {
     /*
      * Update
      */
-    public function updateChoicePick($list, $gender, $data) {
-        // to update the choice pick
-
+    // Old function
+    //public function updateChoicePick($list, $gender, $data) {
+    public function updateChoicePick($list, $gender) {
+        // update the choice pick
         for($i=0; $i < sizeof($list); $i++)
         {
           if($gender == 'male'){
@@ -141,6 +142,8 @@ class Question {
             return false;
           }
         }
+
+        // Old code
         /*
         if($data == true)
         {
